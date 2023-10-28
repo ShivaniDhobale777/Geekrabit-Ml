@@ -1,0 +1,132 @@
+header {
+    z-index: 1;
+    // position: absolute;
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 43px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+ul {
+    margin-top: -10px;
+    margin-left: 19%;
+
+}
+
+ul li {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    height: 18px;
+    color: grey;
+    margin: 10px;
+}
+.link{
+color:gray;
+}
+
+.link:hover{
+      background-color: rgb(59, 58, 58) !important;
+      border-radius: 10px;
+     color:rgba(255, 255, 255, 0.753) !important;
+}
+
+@media (max-width: 767px) {
+    header {
+        // width: 100%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        padding-top: 3.5rem;
+        overflow-y: auto;
+        transition: right 0.3s;
+        background: #0D1835;
+        box-shadow: -17px 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .navbar-brand img {
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    img {
+        height: 36.02px;
+    }
+
+    ul {
+        margin-left: 10px;
+        margin-top: -50px;
+    }
+
+    ul li {
+        margin: 20px;
+    }
+
+    .logo_menu {
+        width: 100%;
+        margin-top: -10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar_toggle_button {
+        margin-left: -17px;
+
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+    .logo_menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        background: #0D1835;
+        transition: right 0.3s;
+        box-shadow: -17px 4px 12px rgba(0, 0, 0, 0.25);
+        margin-left: 500px;
+        height: 100vh;
+        margin-top: -130px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .sidebar_toggle_button {
+        margin-left: -28px;
+        
+    }
+    .navbar-toggler {
+        height: 70px;
+
+    }
+
+    ul li {
+        margin: 35px;
+        font-size: 25px;
+    }
+}
+
+
